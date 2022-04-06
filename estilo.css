@@ -1,0 +1,94 @@
+/* - Tags HTML - */
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 30px;
+    margin: 0px;
+}
+
+h2 {
+    color: chartreuse;
+}
+
+nav {
+    text-align: center;
+    background-color: cyan;
+    width: 100%;
+}
+
+nav a {
+    transition: 400ms;
+    color: white;
+    text-decoration: none;
+}
+
+/*
+nav a:hover {
+    
+    color:darkgreen;
+    background-color: aqua;
+    
+}
+*/
+
+li {
+    background-color: chartreuse;
+}
+
+li:hover {
+    transition: 400ms;
+    background-color:limegreen;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    border: solid 1px white;
+    width: 120px;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: darkgray;
+}
+
+
+/* - Class - */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda {
+    margin: 12px;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 70%;
+}
+
+.conteudo {
+    margin: 12px;
+    padding: 10px;
+    background-color: darkseagreen;
+    width: 30%;
+}
+
+.footer {
+    margin: 12px;
+    background-color: lightslategray;
+}
+
+.titPrinc {
+    color: darkslategray;
+}
+
+
+/* - ID - */
+
+#imgFake {
+    height: 200px;
+    border: solid 1px gray;
+}
