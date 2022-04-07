@@ -70,12 +70,12 @@ nav a:hover {
 }
 
 li {
-    background-color: chartreuse;
+    background-color: limegreen;
 }
 
 li:hover {
     transition: 400ms;
-    background-color:limegreen;
+    background-color:chartreuse;
 }
 
 nav li {
@@ -153,3 +153,30 @@ header {
     height: 200px;
     border: solid 1px gray;
 }
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .esquerda {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .conteudo {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .destaques {
+        width: 100%;
+        padding: 0px;
+        margin: 0px; 
+    }
+
+  }
