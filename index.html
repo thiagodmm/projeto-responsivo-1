@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UC15 - Aula 01</title>
+        <title>Projeto Responsivo - CSS Flexbox Layout Module</small></title>
         <meta charset="utf-8" />
         <meta name="description" content="Primeira aula da UC15" />
         <meta name="keywords" content="HTML, CSS, Mobile First" />
@@ -10,8 +10,8 @@
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
     <body>
-        <header>
-            <h1 class="titPrinc">UC15 - Aula 01</h1>
+        <header id="grad1">
+            <h1 class="titPrinc">Projeto Responsivo<br><small>CSS Flexbox Layout Module</h1>
         </header>
         <nav>
             <ul>
@@ -22,19 +22,31 @@
         </nav>
         <div class="container">
             <div class="esquerda">
-                <img src="casa2000px.jpg" style="width:100%"><br>
-                <br>
-                <h2>Sobre:</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Manduma pindureta quium dia nois paga. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.</p>
-                <h2>Histórico:</h2>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                <img src="casa2000px.jpg" style="width:100%">
+                <h4>Sobre:</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                <p>To start using the Flexbox model, you need to first define a flex container. The flex container becomes flexible by setting the display property to flex. The flex-direction property defines in which direction the container wants to stack the flex items. The column-reverse value stacks the flex items vertically (but from bottom to top). The row value stacks the flex items horizontally (from left to right).</p>
+                <h4>Before the Flexbox Layout module, there were four layout modes:</h4>
+                <p><b>Block</b>, for sections in a webpage;<br>
+                    <b>Inline</b>, for text;<br>
+                    <b>Table</b>, for two-dimensional table data;<br>
+                    <b>Positioned</b>, for explicit position of an element.</p>
+                
+                <div class="container">
+                    <div class="destaques">
+                        <img src="mesa1.jpg" class="imgResponsiva"><br>
+                        The flex-direction property defines in which direction the container wants to stack the flex items. The column-reverse value stacks the flex items vertically (but from bottom to top). The row value stacks the flex items horizontally (from left to right). The flex-direction property defines in which direction.</div>
+                    <div class="destaques">
+                        <img src="mesa1.jpg" class="imgResponsiva"><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. The row value stacks the flex items horizontally.</div>
+                    <div class="destaques">
+                        <img src="mesa1.jpg" class="imgResponsiva"><br>
+                        The flex container becomes flexible by setting the display property to flex. The flex-direction property defines in which direction the container wants to stack the flex items. The column-reverse value stacks the flex items vertically.</div>
+                </div>
 
                 <!--
-                    <picture>
-                    
+                <picture>
                     <source media="(min-width: 1200px)" srcset="casa2000px.jpg" />
-                    
                     <source media="(min-width: 1000px)" srcset="casa1000px.jpg" />
                     <source media="(min-width: 600px)" srcset="casa600px.jpg" />
                     <source media="(min-width: 465px)" srcset="casa465px.jpg" />
@@ -45,7 +57,7 @@
             </div>
             <div class="conteudo">
 
-                <h2>UC15 - Aula 02</h2>
+                <h4>UC15 - Aula 02</h4>
                 <h5>
                     <!-- Javascript que mostra a data atual -->
                     <script>
@@ -53,15 +65,15 @@
                         document.write(date);
                     </script>
                 </h5>
-                <div id="imgFake">Imagem</div>
+                <div><img src="offroad.jpg" class="imgResponsiva"></div>
                 <p><b>Mussum Ipsum...</b></p>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris.Manduma pindureta quium dia nois paga. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.   
                 </p>
                 <br/>
-                <h2>Subtítulo</h2>
+                <h4>Subtítulo</h4>
                 <h5>03/04/2022</h5>
-                <div id="imgFake">Imagem</div>
+                <div><img src="offroad2.jpg" class="imgResponsiva"></div>
                 <p><b>Nemo enim ipsam voluptatem quia voluptas</b></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -69,7 +81,7 @@
         </div>
 
         <div class="footer">
-            <h2>Footer</h2>
+            <h4>Footer</h4>
             <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
         </div>
 
