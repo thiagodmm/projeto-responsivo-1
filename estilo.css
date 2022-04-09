@@ -1,5 +1,9 @@
 /* - Tags HTML - */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -99,6 +103,45 @@ header {
 
 /* - Class - */
 
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    background-color: cyan;
+    justify-content: center;
+}
+
+.menuItem {
+    background-color: limegreen;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: solid 1px lightgray;
+    width: 120px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menuItem:hover {
+    transition: 400ms;
+    background-color:chartreuse;
+}
+
+.menuItem > a {
+    color:darkgreen;
+    text-decoration: none;
+}
+
+.menuItem > a:hover {
+    color:white;
+}
+
+.blocoTexto {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .destaques {
     padding: 10px;
     margin: 10px;
@@ -155,7 +198,18 @@ header {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+
+    .menuBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuItem {
+        padding: 4px;
+        width: 100%;
+        margin: 0;
+    }
     
     .container {
         flex-direction: column;
